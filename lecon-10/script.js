@@ -40,6 +40,7 @@ const code=codeInput.value.trim();
     }
     const filleul=creerFilleul(nom,code);
     console.log(filleul);
+    message.textContent=`cool ${code} et son nom est ${nom}`;
     
     try {
         const response = await fetch("http://localhost/3000", {
